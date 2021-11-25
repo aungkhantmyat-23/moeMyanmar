@@ -18,9 +18,10 @@ export class CourseDetailComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.courseService.getCourses().subscribe((courses)=>{
-      this.courseList = courses;
-    })
+    this.courseList=this.courseService.getCourses();
+    // this.courseService.getCourses().subscribe((courses)=>{
+    //   this.courseList = courses;
+    // })
     this.courseItem=history.state;
     console.log(history.state);
   }
