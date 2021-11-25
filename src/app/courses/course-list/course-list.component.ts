@@ -19,10 +19,10 @@ export class CourseListComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.courseList=this.courseService.getCourses();
-    // this.courseService.getCourses().subscribe((courses)=>{
-    //   this.courseList = courses;
-    // })
+    // this.courseList=this.courseService.getCourses();
+    this.courseService.getCourses().subscribe((courses)=>{
+      this.courseList = courses;
+    })
   
   }
   viewDetail(courseItem) {
