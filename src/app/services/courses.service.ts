@@ -2,8 +2,7 @@ import { courseUrl } from './../config/api';
 import { HttpClient } from '@angular/common/http';
 import { Course } from './../models/courses';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
-
+import { Observable, pluck, tap } from 'rxjs';
 @Injectable({
   providedIn: 'root',
 })
@@ -95,7 +94,7 @@ export class CoursesService {
   // getCourses(): Course[] {
   //   return this.courses;
   // }
-  getCourses(): Observable<Course[]> {
-    return this.http.get<Course[]>(courseUrl);
+  getCourses(): Observable<any> {
+    return this.http.get<Course[]>('assets/db.json').pipe(pluck('courses'));
   }
 }
