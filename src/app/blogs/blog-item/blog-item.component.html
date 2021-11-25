@@ -1,0 +1,13 @@
+<div class="card shadow-sm" >
+    <img [src]="blogItem.img" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{blogItem.name| slice: 0:20 }}...</h5>
+      <p class="card-text">
+        {{blogItem.description | slice: 0:100 }}...
+      </p>
+      <div class="card-footer text-center">
+        <a href="">Read More</a>
+      </div>
+      
+    </div>
+  </div>

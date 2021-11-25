@@ -1,0 +1,155 @@
+.navbar {
+  height: 90px;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  margin-bottom: 90px;
+  z-index: 999;
+}
+.navbar-light {
+  background-color: white;
+}
+.navbar-brand {
+  margin-left: 50px;
+}
+img {
+  width: 100px;
+}
+.navbar-collapse {
+  margin-left: 15%;
+}
+.nav-item a {
+  color: black;
+}
+li {
+  margin-right: 10px;
+}
+li .nav-link:hover {
+  color: #e87323;
+}
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+.hover-underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #e87323;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+#input_container {
+  position: relative;
+  padding: 0 0 0 0px;
+  margin: 0 0px;
+  background: white;
+  width: 230px;
+  border: 1px solid rgb(196, 195, 195);
+}
+.input {
+  height: 20px;
+  margin: 0;
+  width: 100%;
+}
+.fa-search {
+  position: absolute;
+  bottom: 2px;
+  right: 10px;
+  width: 24px;
+  height: 24px;
+}
+.fa-shopping-cart {
+  font-size: 20px;
+}
+input:focus,
+button {
+  outline: none !important;
+}
+.shopping-cart-in {
+  display: none;
+}
+.blank-container{
+    height: 90px;
+}
+@media only screen and (max-width: 1050px) {
+  .navbar-collapse {
+    margin-left: 5%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  #input_container {
+    margin-right: -200px;
+  }
+  .shopping-cart {
+    margin-right: -200px;
+  }
+  .navbar-collapse {
+    position: absolute;
+    border-left: 1px solid rgb(219, 219, 219);
+    top: 90px;
+    left: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    width: 40%;
+    height: 100vh;
+    margin-left: 60%;
+    transition: all 0.4s ease;
+    display: block;
+    background-color: white;
+  }
+  .navbar-collapse.collapsing {
+    height: auto !important;
+    margin-left: 50%;
+    left: 50%;
+    transition: all 0.2s ease;
+    background-color: white;
+  }
+  .navbar-collapse.show {
+    left: 0;
+  }
+  .navbar-toggler {
+    z-index: 99;
+    border: 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  img {
+    width: 80px;
+    margin-left: -50px;
+  }
+  #input_container {
+    margin-right: -60px;
+    width: 150px;
+    height: 32px;
+  }
+  .shopping-cart {
+    display: none;
+  }
+  i {
+    font-size: 18px;
+  }
+  .navbar-toggler {
+    font-size: 20px;
+    border: 0;
+    margin-right: -10px;
+  }
+  .shopping-cart-in {
+    display: block;
+  }
+  .shopping-cart-in i {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,42 @@
+.card {
+    width: 400px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .card h3{
+      margin-top: 30px;
+  }
+  .card form{
+      margin: 30px;
+  }
+  .text-center .btn-dark{
+      width: 150px;
+      margin: 10px;
+  }
+  .card a{
+      color: black;
+  }
+  .card a:hover{
+      color: #e87323;
+  }
+  .card p{
+      margin-left: 30px;
+      margin-bottom: 30px;
+  }
+  
+  @media only screen and (max-width: 450px) {
+      .card {
+          width: 320px;
+          border: 0;
+        }
+        .card p{
+            font-size: 12px;
+            margin-left: 10px;
+        }
+        .card form{
+          margin: 5px;
+      }
+  }
+  

@@ -1,0 +1,39 @@
+.card{
+    margin-bottom: 30px;
+    height: 400px;
+    cursor: pointer;
+}
+.card img{
+    border: 2px solid #e87323;
+}
+.card-footer{
+    text-align: center;
+    background-color: transparent;
+    border: 0;
+}
+.card a{
+    color: black;
+    text-decoration: none;
+}
+
+
+@media only screen and (max-width: 450px) {
+    .card{
+        margin-bottom: 30px;
+        height: 300px;
+    }
+    .card h5{
+        font-size: 18px;
+        height: 40px;
+    }
+    .card h6{
+        font-size: 12px;
+    }
+    .card p{
+        font-size: 10px;
+    }
+    .card a{
+        font-size: 13px;
+    }
+    
+}

@@ -1,0 +1,77 @@
+.container-one{
+  background-color: rgb(36, 36, 36);
+}
+.row-main{
+  margin-left: 80px;
+  margin-right: 80px;
+  padding-top: 50px;
+}
+.container {
+  color: white;
+}
+.container .title-hr {
+  
+  border-top: 3px solid #e87323;
+  width: 80px;
+  margin-bottom: 20px;
+
+}
+
+.support-container p {
+  border-bottom: 1px dotted white;
+  padding-bottom: 10px;
+}
+.contact-info i{
+    color: #e87323;
+}
+.fab{
+    font-size: 45px;
+}
+.media-row{
+    margin-top: 50px;
+}
+.fa-facebook:hover{
+    color: #4267B2;
+    transition: color 0.5s ease;
+}
+.fa-youtube:hover{
+    color: #FF0000;
+    transition: color 0.5s ease;
+}
+.fa-instagram:hover{
+    color:  #833AB4;
+    transition: color 0.5s ease;
+}
+.container-two{
+    background-color: rgb(20, 20, 20);
+    color: whitesmoke;
+    height: 50px;
+}
+.container-two .text-center{
+    padding-top: 15px;
+}
+
+@media only screen and (max-width: 800px) {
+  .fab{
+    font-size: 35px;
+}
+.row-main{
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 50px;
+}
+.col-md-4{
+  margin-bottom: 30px;
+}
+h4{
+  font-size: 20px;
+}
+p{
+  font-size: 12px;
+}
+.container-two{
+  background-color: rgb(20, 20, 20);
+  color: whitesmoke;
+  height: 60px;
+}
+}

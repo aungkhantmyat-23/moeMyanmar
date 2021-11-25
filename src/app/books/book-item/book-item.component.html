@@ -1,0 +1,20 @@
+<div class="card shadow-sm row">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <img [src]="bookItem.img" class="card-img-top" alt="..." />
+      </div>
+      <div class="col">
+        <h5 class="card-title">{{ bookItem.name | slice: 0:20 }}...</h5>
+        <h6 class="card-subtitle mb-2 text-muted">
+          {{ bookItem.price | currency: "Ks " }}
+        </h6>
+        <p class="card-text">{{ bookItem.description | slice: 0:60 }}...</p>
+        <br /><br />
+        <button type="button" class="btn btn-dark">Detail</button>
+
+        <button type="button" class="btn btn-link">Detail</button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,28 @@
+.row{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+@media only screen and (max-width: 800px) {
+    .courses h2 {
+        font-size: 25px;
+        margin-left: 30px;
+        width: 35%;
+        margin-bottom: 30px;
+      }
+      .courses .row{
+        overflow: hidden;
+      }
+}
+
+@media only screen and (max-width: 450px) {
+    .row{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .courses h2 {
+        font-size: 20px;
+        margin-left: 10px;
+        width: 55%;
+      }
+}

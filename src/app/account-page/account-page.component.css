@@ -1,0 +1,71 @@
+.card{
+    margin: 50px;
+}
+.card .row{
+    margin: 30px;
+}
+img{
+    width: 250px;
+}
+.vr{
+    width: 1px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.container h5{
+    font-weight: 400;
+}
+.btn{
+    width: 200px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+    .card{
+        margin: 20px;
+    }
+    .card .row{
+        margin: 10px;
+    }
+    img{
+        width: 200px;
+    }
+    .hstack{
+        margin-left: -20px;
+    }
+    .hstack h2{
+        font-size: 25px;
+    }
+    .hstack p{
+        font-size: 14px;
+    }
+    .container h5{
+        font-weight: 400;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .card{
+        margin: 10px;
+    }
+    .card .row{
+        margin: 5px;
+    }
+    .col-md-5{
+        text-align: center;
+    }
+    .hstack{
+        margin-left: 0px;
+    }
+    .col-md-5 h5{
+        text-align: start;
+    }
+    .btn-danger{
+        margin-bottom: 30px;
+    }
+    
+}

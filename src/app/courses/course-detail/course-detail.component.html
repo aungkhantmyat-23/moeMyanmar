@@ -1,0 +1,48 @@
+<div class="container-xxl">
+  <div class="row row-main">
+    <div class="col-md-5">
+      <div class="card">
+        <img src="../../../assets/images/course-feature-image-01.jpg" alt="" />
+      </div>
+    </div>
+    <div class="col-md-7">
+      <h3>{{ courseItem.name }}</h3>
+      <div class="row">
+        <div class="col">
+          <h5>Category : {{ courseItem.category }}</h5>
+        </div>
+        <div class="col">
+          <h5>Duration : {{ courseItem.duration }} Months</h5>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h5>Fees : {{ courseItem.price }}</h5>
+        </div>
+        <div class="col">
+          <h5>Certificate : Yes</h5>
+        </div>
+      </div>
+      <h5>Access : {{ courseItem.access }}</h5>
+      <p>
+        {{ courseItem.description }}
+      </p>
+      <div class="enroll">
+        <button type="button" class="btn btn-dark">Enroll</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-xxl container-courses">
+  <h3>Courses You May Also Like</h3>
+  <hr />
+  <div class="row">
+    <div
+      class="container-xxl col-lg-3 col-md-4 col-6"
+      *ngFor="let course of courseList; let i = index"
+    >
+      <app-course-item [courseItem]="course" *ngIf="i < 3"></app-course-item>
+    </div>
+  </div>
+</div>

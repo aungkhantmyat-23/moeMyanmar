@@ -1,0 +1,53 @@
+<div class="container-xxl aboutUs">
+  <div class="container">
+    <h3>About Us</h3>
+    <p>
+      ၆လအတွင်း ရောင်းအား (၂)ဆ တိုးတက်ချင်တဲ့ လုပ်ငန်းရှင်များကို ကူညီပေးနေတဲ့
+      နေရာလေးပါ။ သင်တန်းသားပေါင်း ၁၀,၀၀၀ ကျော်သင်ကြားပေးခဲ့ပြီး၊ သင်တန်းသက်တမ်း
+      (၄)နှစ်ကျော်ခဲ့ပါပြီ။
+    </p>
+    <br />
+    <button type="button" class="btn btn-dark">Read More</button>
+  </div>
+</div>
+
+<div class="container-xxl courses">
+  <h2 class="courses-title">Our Latest Courses</h2>
+  <div class="row">
+    <div
+      class="container-xxl col-lg-3 col-md-4 col-6"
+      *ngFor="let course of courseList; let i = index"
+    >
+      <app-course-item [courseItem]="course" *ngIf="i < 4"></app-course-item>
+    </div>
+  </div>
+  <br />
+  <br />
+  <div class="text-center">
+    <button
+      type="button"
+      class="btn btn-dark"
+      [routerLink]="['/course-list']"
+      routerLinkActive="router-link-active"
+    >
+      More Courses
+    </button>
+  </div>
+  <br />
+</div>
+
+<div class="container-xxl note-section">
+  <h4>Our New Class</h4>
+  <div class="container">
+    <h2>Class SNS – Study Note Session</h2>
+    <p>
+      ဒီချိန်မှာ အိမ်မှာ ဒီတိုင်းမနေပဲကိုယ့်ရဲ့ သိပြီးသားအသိတွေ
+      ထပ်တိုးအောင်ပညာရည်ပိုပြည့်ဝအောင်လေ့လာထားချင်တယ် ဆိုရင်စီးပွားရေးနဲ့
+      သက်ဆိုင်တဲ့ တပတ်လေ့လာထားသမျှနည်းသစ်၊
+      ဗဟုသုတအသစ်၊အတွေးအခေါ်အသစ်တွေကိုသင်ပေးနေတဲ့ Study Note Sessionလေးရှိပါတယ်
+    </p>
+  </div>
+  <div class="text-center">
+    <button type="button" class="btn btn-dark">More Details</button>
+  </div>
+</div>

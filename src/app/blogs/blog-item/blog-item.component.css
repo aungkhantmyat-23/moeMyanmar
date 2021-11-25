@@ -1,0 +1,32 @@
+.card{
+    height: 500px;
+}
+
+.card-footer{
+    background-color: transparent;
+    border: 0;
+}
+.card-footer a{
+    color: black;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1050px) {
+    .card{
+        height: 400px;
+    }
+    .card-footer a{
+        margin-bottom: 30px;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .card{
+        height: 420px;
+    }
+    
+}
+@media only screen and (max-width: 450px) {
+    .card{
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,7 @@
+<div class="container-fluid horizontal-scrollable">
+  <div class="row">
+    <div class="col-lg-4 col-md-4 col-12" *ngFor="let blog of blogList; let i=index">
+      <app-blog-item [blogItem]="blog" *ngIf="i<3"></app-blog-item>
+    </div>
+  </div>
+</div>

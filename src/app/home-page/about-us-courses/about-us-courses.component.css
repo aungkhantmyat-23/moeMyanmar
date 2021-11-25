@@ -1,0 +1,102 @@
+.aboutUs {
+  text-align: center;
+  height: 50vh;
+  background-color: white;
+  width: 100%;
+  border-top: 10px solid #e87323;
+  border-bottom: 10px solid #e87323;
+  margin: 0;
+}
+.aboutUs .container {
+  padding-top: 4%;
+  width: 60%;
+}
+
+.courses {
+  background-color: whitesmoke;
+}
+.courses button{
+  margin-bottom: 20px;
+}
+.courses h2 {
+  margin-left: 50px;
+  padding-top: 5%;
+  border-bottom: 2px solid #e87323;
+  padding-bottom: 10px;
+  width: 30%;
+  margin-bottom: 50px;
+}
+
+.row {
+  justify-content: space-evenly;
+}
+.card img {
+  width: 100%;
+}
+.note-section {
+  padding-top: 50px;
+  text-align: center;
+  padding-bottom: 50px;
+  border-bottom: 10px solid #e87323;
+}
+.note-section h4 {
+  font-weight: lighter;
+  font-size: 20px;
+  color: #e87323;
+}
+.note-section .container {
+  width: 70%;
+}
+
+@media only screen and (max-width: 1050px) {
+    .aboutUs {
+        height: 300px;
+      }
+      
+}
+
+@media only screen and (max-width: 800px) {
+    .aboutUs .container {
+        padding-top: 6%;
+      }
+      .courses h2 {
+        font-size: 25px;
+        margin-left: 30px;
+        width: 35%;
+        margin-bottom: 30px;
+      }
+      .courses .row{
+        overflow: hidden;
+      }
+      .note-section .container{
+        width: 90%;
+      }
+}
+
+@media only screen and (max-width: 450px) {
+    .aboutUs .container {
+        padding-top: 12%;
+        width: 80%;
+      }
+      
+    .aboutUs h3{
+        font-size: 20px;
+      }
+      .aboutUs p{
+          font-size: 12px;
+      }
+      .courses h2 {
+        font-size: 20px;
+        margin-left: 10px;
+        width: 55%;
+      }
+      .note-section h4 {
+        font-size: 18px;
+      }
+      .note-section h2{
+        font-size: 23px;
+      }
+      .note-section p{
+        font-size: 12px;
+      }
+}

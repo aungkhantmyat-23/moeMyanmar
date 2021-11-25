@@ -1,0 +1,17 @@
+<div class="card shadow-sm" (click)="viewDetail(courseItem)">
+  <img
+    src="https://myanmaronlineentrepreneur.com/wp-content/uploads/2021/09/course-feature-image-01.jpg"
+    class="card-img-top"
+    alt="..."
+  />
+  <div class="card-body">
+    <h5 class="card-title">{{ courseItem.name | slice: 0:20 }}...</h5>
+    <h6 class="card-subtitle mb-2 text-muted">
+      {{ courseItem.price | currency: "Ks " }}
+    </h6>
+    <p class="card-text">{{ courseItem.description | slice: 0:50 }}...</p>
+    <div class="card-footer">
+      <a href="">Learn More</a>
+    </div>
+  </div>
+</div>
